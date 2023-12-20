@@ -13,25 +13,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
     
-    var leftDiceNumber = 1
-    var rightDiceNumber = 5 
+    // Dice default value (index)
+    // var leftDiceNumber = 1
+    // var rightDiceNumber = 5 
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
 
         // print("leftDiceNumber at beginning = \(leftDiceNumber)")
 
-        diceImageView1.image =
-            [UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix")][leftDiceNumber]
+        // Dice image Arrays
+        let diceArray = [UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix")]
 
-            // 1씩 증가
-            leftDiceNumber += 1
+        // Dice image Random Create
+        diceImageView1.image = diceArray[Int.random(in: 0...5)]
+        diceImageView2.image = diceArray[Int.random(in: 0...5)]
 
-        diceImageView2.image = 
-            [UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix"), UIImage(imageLiteralResourceName: "DiceSix")][rightDiceNumber]
+        // Increase by 1
+        // leftDiceNumber += 1
 
-            // 1씩 감소
-            leftDiceNumber -= 1
+        // Decrement by 1
+        // leftDiceNumber -= 1
+
+        // Random number Create -  Int.random(in: lower...upper)
+        // => Randomise numbers, including numbers in parentheses
     }
-    
 }
 

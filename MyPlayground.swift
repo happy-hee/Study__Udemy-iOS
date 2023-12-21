@@ -132,7 +132,6 @@ func exercise() {
   [Constants]
 ***************************************************************************************  
 */
-
 /*
 [Code Exercise] Constants
 Variables store data that can vary.
@@ -165,3 +164,60 @@ func exercise() {
     print(secondsInAnHour)
 
 }
+
+
+/*
+***************************************************************************************
+  [Function and Scope]
+***************************************************************************************  
+*/
+
+// Declare a function
+func greeting1() {
+  print("Hello!") 
+
+  // This variable can only be used whithin this(greeting1 func) scope
+  var myName = "happy"
+}
+
+func greeting2() {
+  print("Hi!") 
+}
+
+// Run a function
+greeting1()
+greeting2()
+
+
+/*
+[Coding Exercise] Functions Part 1
+Step 1. Head over to https://repl.it/@appbrewery/functions-1-exercise#main.swift and run the code, 
+you should see something like the maps below printed:
+
+Step 2. Use a combination of these four functions
+// 이 4개의 함수를 조합해서 사용하세요.
+
+up()
+down()
+left()
+right()
+
+to navigate the 🦊to the 🌽.
+🦊를 🌽가 있는 곳으로 이동합니다.
+
+Each time you call one of the above functions, it will move the fox one step in the chosen direction.
+위의 함수 중 하나를 실행 할 때마다, 그것은 여우를 선택한 방향으로 한칸씩 움직입니다.
+
+* 이 문제를 실행했을 경우를 확인은 https://repl.it/@appbrewery/functions-1-exercise#main.swift  에서 작업
+*/ 
+
+down()
+down()
+down()
+down()
+down()
+
+right()
+right()
+right()
+right()

@@ -62,3 +62,25 @@ var numbers = [45, 78, 198, 63]
 var computedNumbers = [numbers[0] * numbers[1], numbers[1] * numbers[2], numbers[2] * numbers[3], numbers[3] * numbers[0] ] // [3285, 14235, 10335, 2385]
 
 print(computedNumbers)
+
+
+/*
+***************************************************************************************
+  [Random]
+***************************************************************************************  
+*/
+
+/*
+  Int.random(in: lower...upper)
+*/
+// Random numbers, including numbers in parentheses
+Int.random(in: 0...5) // One of 0, 1, 2, 3, 4, 5 is output randomly.
+
+// Random numbers, including numbers in parentheses 
+Int.random(in: 0..<5) // One of 0, 1, 2, 3, 4  is output randomly.
+
+/*
+  Bool.random()
+*/
+// true or false appears randomly
+Bool.random()

@@ -27,15 +27,13 @@ class ViewController: UIViewController {
         // Dice image Random Create
         diceImageView1.image = diceArray[Int.random(in: 0...5)]
         diceImageView2.image = diceArray[Int.random(in: 0...5)]
+        
 
         // Increase by 1
         // leftDiceNumber += 1
 
         // Decrement by 1
         // leftDiceNumber -= 1
-
-        // Random number Create -  Int.random(in: lower...upper)
-        // => Randomise numbers, including numbers in parentheses
     }
 }
 

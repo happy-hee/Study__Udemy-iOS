@@ -84,3 +84,42 @@ Int.random(in: 0..<5) // One of 0, 1, 2, 3, 4  is output randomly.
 */
 // true or false appears randomly
 Bool.random()
+
+/*
+***************************************************************************************
+  [Constants]
+***************************************************************************************  
+*/
+
+/*
+[Code Exercise] Constants
+Variables store data that can vary.
+변수는 다양한 데이터를 저장할 수 있습니다.
+
+Another type of container in Swift is the Constant. 
+Swift의 또다른 타입의 컨테이너는 상수입니다.
+When you declare a constant, the data you add to it cannot change.
+상수를 선언하고 그 안에 넣은 데이터는 바꿀 수 없습니다.
+
+Constants are declared using a let instead of a var.
+상수는 var 대신 let을 사용해 선언합니다. 
+Try it out in this code exercise.
+
+Declare a constant called secondsInAnHour that represents the number of seconds in an hour and 
+1시간의 초를 나타내는 secondsInAnHour라고 불리는 상수를 선언하고,
+assign that number to it on the same line. 
+같은 라인에 해당 숫자를 할당하세요.
+
+The data type of the constant should be an Integer.
+상수의 데이터 타입은 무조건 정수여야 합니다.
+*/
+
+func exercise() {
+    //Write your code here.
+    let secondsInAnHour = 60 * 60
+    
+    
+    //Don't change the code below.
+    print(secondsInAnHour)
+
+}

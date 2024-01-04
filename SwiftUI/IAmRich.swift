@@ -17,7 +17,7 @@ struct IAmRich: View {
         Text("I Am Rich")
           .font(.system(size: 40)) // 폰트 크기 
           .fontWeight(.bold) // 폰트 굵기
-          .foregroundcolor(.Color.white) // 폰트 색상
+          .foregroundColor(Color.white) // 폰트 색상
 
         Image("diamond") // 이미지("Assets 에서 추가한 diamond 라는 이름의 이미지")
           .resizable() // 크기조정 가능()
